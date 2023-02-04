@@ -11,5 +11,18 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
   }
+    //style binding
+  appliedCSSClass = 'green';
+  notAppliedCSSClass = true;
+  myColor = 'red';
 
+  //Two-way data binding
+  myName = '';
+
+  //Event binding
+  message = '';
+
+  onButtonClick() {
+    this.message = 'Button was clicked!';
+  }
 }
