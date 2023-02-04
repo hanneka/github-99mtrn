@@ -1,0 +1,33 @@
+
+<hr>
+<br>
+
+
+<!-- Directives *ngIf, *ngFor, *ngSwitch, *ngStyle, *ngClass -->
+
+<ng-template [ngIf]="showElement">
+  <p>This is the element.</p>
+</ng-template>
+
+<ul>
+  <li *ngFor="let item of num">
+    {{ item }}
+        {{ item }}
+  </li>
+</ul>
+
+<table>
+  <tr *ngFor="let item of items2">
+    <td>{{ item.name }}</td>
+    <td>{{ item.city }}</td>
+    <td>{{ item.school }}</td>
+  </tr>
+</table>
+
+<!-- ngSwitch Demo -->
+
+<ng-container [ngSwitch]="selectedOption">
+  <p *ngSwitchCase="1">Option 1 is selected</p>
+  <p *ngSwitchCase="2">Option 2 is selected</p>
+  <p *ngSwitchDefault>No Option Selected</p></ng-container
+>
